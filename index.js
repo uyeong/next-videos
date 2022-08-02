@@ -13,7 +13,7 @@ module.exports = (nextConfig = {}) => {
       const basePath = nextConfig.basePath || '';
 
       config.module.rules.push({
-        test: /\.(mp4|webm|ogg|swf|ogv)$/,
+        test: /\.(mp4|webm|mov|ogg|swf|ogv)$/,
         use: [
           {
             loader: require.resolve('file-loader'),
